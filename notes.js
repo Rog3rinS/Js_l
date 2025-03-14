@@ -96,3 +96,8 @@ const tempPositive = tempLondon.filter(function(value) {
 })
 
 console.log(tempPositive);
+
+// you just save a function in a variable, my guess is that under the hood the func is a pointer to somewhere in the stack that   starts the func
+const car = function() {
+	console.log("Tesla")
+}
